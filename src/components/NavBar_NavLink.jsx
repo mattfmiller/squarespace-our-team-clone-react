@@ -6,14 +6,14 @@ function NavLink(props) {
   return(
     <div className='navLink'>
       <style jsx>{`
-          a {
+          span {
             color: black;
             text-decoration: none;
             font-size: 13px;
           }
         `}
       </style>
-      <Link to={props.linkUrl}><p>{props.name}</p></Link>
+      <Link to={props.linkUrl}><p><span>{props.name}</span></p></Link>
     </div>
   );
 }

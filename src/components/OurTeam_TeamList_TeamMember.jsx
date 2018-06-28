@@ -3,11 +3,28 @@ import PropTypes from 'prop-types';
 
 function TeamMember(props) {
   return(
-    <div>
-      <img src={props.image}/>
-      <h4>{props.name}</h4>
-      <p><strong>{props.title}</strong></p>
-      <p>{props.bio}</p>
+    <div className='team-container'>
+      <style jsx>{`
+        .team-container {
+          display: flex;
+          justify-content: space-between;
+        }
+        .image {
+          width: 100%;
+        }
+        img {
+          width: 20vw;
+        }
+
+      `}</style>
+      <div className='image'>
+        <img src={props.image}/>
+      </div>
+      <div className='text'>
+        <h4>{props.name}</h4>
+        <p><strong>{props.title}</strong></p>
+        <p>{props.bio}</p>
+      </div>
     </div>
   );
 }

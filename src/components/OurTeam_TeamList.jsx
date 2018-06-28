@@ -70,9 +70,19 @@ const teamMembers = [
 
 function TeamList(){
   return(
-    <div>
+    <div className='container'>
+      <style jsx>{`
+        .links img {
+          float: left;
+        }
+        h2 {
+          text-align: center;
+          text-transform: uppercase;
+        }
+
+      `}</style>
+      <h2>Executive Team</h2>
       <div className='links'>
-        <h2>Executive Team</h2>
         {teamMembers.map((member, index) =>
           <TeamMember name={member.name}
             bio={member.bio}

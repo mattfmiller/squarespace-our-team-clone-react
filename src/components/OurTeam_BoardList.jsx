@@ -32,8 +32,19 @@ const boardMembers = [
 function BoardList() {
   return(
     <div>
+      <style jsx>{`
+        .boardMembers {
+          display: flex;
+          justify-content: space-around;
+        }
+
+        h2 {
+          text-align: center;
+        }
+
+      `}</style>
+      <h2>BOARD OF DIRECTORS</h2>
       <div className='boardMembers'>
-        <h2>BOARD OF DIRECTORS</h2>
         {boardMembers.map((member, index) =>
           <BoardMember name={member.name}
             title={member.title}
