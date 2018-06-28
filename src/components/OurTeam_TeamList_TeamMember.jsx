@@ -10,10 +10,17 @@ function TeamMember(props) {
           justify-content: space-between;
         }
         .image {
-          width: 100%;
+          width: 70%;
         }
         img {
-          width: 20vw;
+          width: 25vw;
+          margin: 0px 0px 40px 60px;
+        }
+        .text {
+          width: 100%;
+        }
+        .text p:last-child {
+          line-height: 1.8;
         }
 
       `}</style>

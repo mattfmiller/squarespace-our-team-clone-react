@@ -78,6 +78,7 @@ function TeamList(){
         h2 {
           text-align: center;
           text-transform: uppercase;
+          margin-bottom: 100px;
         }
 
       `}</style>

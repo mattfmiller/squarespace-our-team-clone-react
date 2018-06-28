@@ -4,6 +4,7 @@ import Error404 from './Error404';
 import Header from './Header';
 import NavBar from './NavBar';
 import OurTeam from './OurTeam';
+import Locations from './Locations';
 
 function App(){
   return (
@@ -18,7 +19,8 @@ function App(){
       <NavBar/>
       <Switch>
         <Route exact path='/' component={OurTeam}/>
-        <Route component={Error404} />
+        <Route path='/locations' component={Locations}/>
+        <Route component={Error404}/>
       </Switch>
     </div>
   );
