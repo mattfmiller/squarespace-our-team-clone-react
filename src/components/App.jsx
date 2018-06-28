@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Error404 from './Error404';
 import Header from './Header';
 import NavBar from './NavBar';
+import OurTeam from './OurTeam';
 
 function App(){
   return (
@@ -16,6 +17,7 @@ function App(){
       <Header/>
       <NavBar/>
       <Switch>
+        <Route exact path='/' component={OurTeam}/>
         <Route component={Error404} />
       </Switch>
     </div>

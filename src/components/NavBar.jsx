@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from './NavBar_Link';
+import NavLink from './NavBar_NavLink';
 
 const linkList = [
   {
@@ -12,7 +12,7 @@ const linkList = [
   },
   {
     name: 'Our Team',
-    linkUrl: '/ourteam'
+    linkUrl: '/'
   },
   {
     name: 'Locations',
@@ -30,12 +30,13 @@ function NavBar() {
         }
         .navBar {
           margin: 15px 40px;
+          text-transform: uppercase;
         }
       `}
       </style>
       <div className='links'>
         {linkList.map((link, index) =>
-          <Link name={link.name}
+          <NavLink name={link.name}
             linkUrl={link.linkUrl}
             key={index}/>
         )}
